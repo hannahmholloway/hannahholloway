@@ -18,6 +18,21 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .toc-holder {
+    margin-bottom: 20px;
+  }  
+  #code, #console {
+    height:auto;
+  }
+  #code {
+    margin-bottom: 20px;
+  }
+  code {
+    margin-bottom: 20px;
+  }    
+}
+
 code {
     border-radius: 5px;
   width:750px;
