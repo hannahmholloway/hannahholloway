@@ -22,7 +22,14 @@ a {
   color: #3a92c8;
   text-decoration: none;
 }
+.inner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 
+.right {
+  float: right;
+}
 #about a:hover {
   text-decoration: underline;
 }
