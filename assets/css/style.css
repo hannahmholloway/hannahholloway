@@ -13,14 +13,11 @@ body {
   color: #272829;
 }
 
-div#console {
+div #console {
 color: white;
 text-align: left;font-size: 13px;
 font-family: 'Monaco', 'Courier New';
 padding: 20px;
-height: auto;
-width: 100%;
-margin: 0;
 line-height: 20px;
 margin-bottom: 20px;
 border-radius: 5px;
