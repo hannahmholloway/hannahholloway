@@ -13,16 +13,6 @@ body {
   color: #272829;
 }
 
-div #console {
-color: white;
-text-align: left;font-size: 13px;
-font-family: 'Monaco', 'Courier New';
-padding: 20px;
-line-height: 20px;
-margin-bottom: 20px;
-border-radius: 5px;
--webkit-font-smoothing: antialiased;
-}
 
 a {
   color: #149ddd;
