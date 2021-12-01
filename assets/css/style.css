@@ -45,11 +45,12 @@ code {
   padding-top:40px;
   font-size:30px;
   background: #383737;
-  height: 700px;
+  height: 600px;
   font-family: 'Monaco', 'Courier New';
   text-align: left;
   font-size:13px;
   color: #fafafa;
+  padding-left: 20px;
 }
 a:hover {
   color: #ff1493;
