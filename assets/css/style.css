@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
-  color: #272829;
+  color: white;
+  background-color: black;
 }
 
 a {
@@ -51,7 +52,7 @@ code {
   color: #fafafa;
 }
 a:hover {
-  color: #37b3ed;
+  color: #ff1493;
   text-decoration: none;
 }
 
@@ -557,7 +558,7 @@ section {
   background: rgba(20, 157, 221, 0.95);
 }
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ff1493;
 }
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
@@ -895,7 +896,7 @@ section {
   border-radius: 4px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: #ff1493;
 }
 @-webkit-keyframes animate-loading {
   0% {
