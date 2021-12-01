@@ -39,10 +39,10 @@ code {
 }
 
 #code {
-    border-radius: 5px;
+  border-radius: 5px;
   width:750px;
   margin: 0 auto;
-  padding-top:15px;
+  padding-top:40px;
   font-size:30px;
   background: #383737;
   height: 700px;
@@ -352,6 +352,9 @@ section {
   margin-bottom: 0;
 }
 
+span.answer{
+  color: #ccc;
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
