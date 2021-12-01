@@ -294,7 +294,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: black;
 }
 
 .section-title {
@@ -306,7 +306,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: white;
 }
 .section-title h2::after {
   content: "";
@@ -365,7 +365,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #ff1493;
+  color: #white;
   float: left;
   line-height: 0;
 }
@@ -374,7 +374,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #050d18;
+  color: white;
   margin-left: 60px;
 }
 .facts .count-box p {
@@ -382,23 +382,23 @@ section {
   margin: 0 0 0 60px;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: #ff1493;
 }
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: #ff1493;
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   transition: ease-in-out 0.3s;
 }
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: #ff1493;
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -438,12 +438,12 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #ff1493;
 }
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #ff1493;
   position: relative;
 }
 .resume .resume-item h4 {
@@ -452,12 +452,12 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  color: #050d18;
+  color: white;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #d3d3d3;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -480,8 +480,8 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: black;
+  border: 2px solid #ff1493;
 }
 
 /*--------------------------------------------------------------
@@ -495,7 +495,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: black;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -507,7 +507,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #ff1493;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -588,7 +588,7 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: black;
   opacity: 1;
   border: 1px solid #ff1493;
 }
