@@ -1,0 +1,248 @@
+//mq
+$mq1: 816px;
+$mq2: 650px;
+$mq3: 575px;
+$mq4: 450px;
+$mq5: 300px;
+
+@import './print';
+
+#resume {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  background: #666;
+
+  * {
+    transition: all 0.2s ease-in-out;
+
+    &::selection {
+      background: #00f428;
+      color: #000;
+    }
+  }
+
+  #date-stamp {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+
+    @media only screen and (max-width: 1145px) {
+      opacity: 0;
+    } 
+  }
+
+  svg {
+    padding-bottom: 0.4rem;
+    vertical-align: middle;
+    text-align: left;
+    margin-left: 0.5rem;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+  }
+
+  h2 {
+    font-style: italic;
+    margin-left: 2rem;
+    color: #00f428;
+    fill: #00f428;
+    @media only screen and (max-width: $mq3) {
+      margin-left: 0;
+    } 
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background: #000;
+    display: inline-block;
+    color: #fff;
+    padding: 0 1rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 900;
+
+    span {
+      color: #666;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+  }
+
+  main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+
+    header,
+    #profile,
+    #work {
+      padding: 2rem;
+    }
+
+    header {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      fill: #fff;
+      background: #000;
+      @media only screen and (max-width: $mq2) {
+        margin-bottom: 2rem;
+      }
+      @media only screen and (max-width: $mq3) {
+        display: block;
+        text-align: center;
+        padding-bottom: 4rem;
+        svg {
+          display: none;
+        }
+      }      
+
+      ul {
+        text-align: right;
+        font-size: 1.4rem;
+        @media only screen and (max-width: $mq3) {
+          text-align: center;
+          margin-top: 2rem;
+        } 
+
+        a {
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            color: #00f428;
+            text-decoration: underline;
+            fill: #00f428;
+          }
+        }
+      }
+    }
+
+    #profile,
+    #work {
+      font-size: 1.2rem;
+      @media only screen and (max-width: $mq2) {
+        padding: 0rem 2rem;
+      }
+
+      section {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        @media only screen and (min-width: calc($mq2 - 1px)) {
+        &:last-of-type {
+          margin-bottom: 0rem;
+          border-bottom: 0rem;
+        }
+      }
+
+        &:hover {
+          h3 {
+            color: #00f428;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    #profile {
+      width: calc(100% / 3 - 4rem);
+      height: 100%;
+      @media only screen and (max-width: $mq2) {
+        width: 100%;
+      }
+
+      section:not(:last-of-type) {
+        border-bottom: solid 0.1rem #000;
+      }
+
+      ul {
+        li:not(:last-of-type) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    #work {
+      border-left: solid 0.2rem #000;
+      width: calc(100% / 3 * 2 - 4.2rem);
+      height: 100%;
+      @media only screen and (max-width: $mq2) {
+        border: 0;
+        width: 100%;
+      }
+    }
+
+    #experience {
+      padding-bottom: 1rem !important;
+
+      >ul>li:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+
+      ul {
+
+        p {
+          font-weight: 600;
+          font-style: italic;
+
+          span {
+            color: #666;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 1.2rem;
+          }
+        }
+
+        ul {
+          margin: 1rem 0 1rem 2rem;
+
+          li {
+            list-style: disc;
+          }
+        }
+      }
+    }
+
+    #skills {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+          width: calc(50% - 1rem);
+          margin-bottom: 0.5rem;
+          @media only screen and (max-width: $mq4) {
+            width: calc(50% - 1rem);
+          } 
+          @media only screen and (max-width: $mq5) {
+            width: calc(100%);
+            list-style-type: disc;
+            margin-left: 1.4rem;
+          } 
+
+        }
+      }
+    }
+  }
+}

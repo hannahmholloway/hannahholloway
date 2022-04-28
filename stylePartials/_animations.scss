@@ -1,0 +1,164 @@
+@keyframes anim-glowFlicker {
+  0% {
+    filter: drop-shadow(0px 0px 15px $secondary);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 5px $primary);
+  }
+}
+.anim-glowFlicker {
+  animation: anim-glowFlicker 0.01s ease infinite;
+  @media screen and (prefers-reduced-motion: reduce) {
+    animation-iteration-count: 0;
+    filter: drop-shadow(0px 0px 10px $primary);
+  }
+}
+@keyframes anim-glowFlicker-alt {
+  0% {
+    filter: drop-shadow(0px 0px 15px $secondary);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 5px $secondary);
+  }
+}
+.anim-glowFlicker-alt {
+  animation: anim-glowFlicker-alt 0.01s ease infinite;
+  @media screen and (prefers-reduced-motion: reduce) {
+    animation-iteration-count: 0;
+    filter: drop-shadow(0px 0px 10px $secondary);
+  }
+}
+
+@keyframes anim-blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.anim-blink {
+  animation: anim-blink 0.5s infinite;
+  @media screen and (prefers-reduced-motion: reduce) {
+    display: none;
+  }
+}
+
+@keyframes anim-static {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  10% {
+    background-position: -5% -10%;
+  }
+
+  20% {
+    background-position: -15% 5%;
+  }
+
+  30% {
+    background-position: 7% -25%;
+  }
+
+  40% {
+    background-position: 20% 25%;
+  }
+
+  50% {
+    background-position: -25% 10%;
+  }
+
+  60% {
+    background-position: 15% 5%;
+  }
+
+  70% {
+    background-position: 0% 15%;
+  }
+
+  80% {
+    background-position: 25% 35%;
+  }
+
+  90% {
+    background-position: -10% 10%;
+  }
+}
+.anim-static {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: block;
+  background: url(./assets/images/whitenoise.png);
+  animation: 0.09s infinite anim-static;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 5;
+  @media screen and (prefers-reduced-motion: reduce) {
+    animation-iteration-count: 0 !important;
+    animation: 0s !important;
+  }
+}
+
+.anim-bands {
+  $one: #070012;
+  $two: #000917;
+  background-image: linear-gradient(90deg,
+    #000000 25%,
+    $one 25%,
+    $one 31.25%,
+    $two 43.75%,
+    $two 50%,
+    #000000 50%,
+    #000000 75%,
+    $one 75%,
+    $one 76.25%,
+    $two 93.75%,
+    $two 100%);
+  background-size: 32px 32px;
+  animation: 0.01s infinite anim-static;
+  @media screen and (prefers-reduced-motion: reduce) {
+    animation-iteration-count: 0 !important;
+    animation: 0s !important;
+  }
+}
+
+.disableAnimation .anim-static,
+.disableAnimation #intro {
+  animation-iteration-count: 0 !important;
+  animation: 0s !important;
+}
+.disableAnimation .anim-glowFlicker {
+  animation-iteration-count: 0;
+  filter: drop-shadow(0px 0px 5px $primary);
+}
+.disableAnimation .anim-blink {
+  display: none;
+}
+
+button#disableAnim {
+  z-index: 999;
+  color: $secondary;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  padding: 0.5rem;
+  filter: drop-shadow(0px 0px 5px $secondary);
+  @media screen and (max-width: 850px) {
+    left: unset;
+  }
+  &:hover,
+  &:focus {
+    color: $background;
+    background: $secondary;
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+    display: none;
+  }
+}

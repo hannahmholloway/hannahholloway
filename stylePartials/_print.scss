@@ -1,0 +1,22 @@
+#resume main {
+  margin: 0 auto;
+  max-width: calc(8.5in);
+  @media only screen and (min-width: $mq1) {
+  height: calc(11in);
+  overflow: hidden;
+  }
+}
+
+@media print {
+  body {
+    margin: 0mm !important;
+  }
+  #date-stamp {
+    display: none;
+  }
+  @page {
+    size: 8.5in 11in;
+    margin: 0mm !important;
+    padding: 0mm !important;
+  }
+}
