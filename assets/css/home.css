@@ -41,8 +41,11 @@ html[data-theme="dark"] {
 }
 /* Particle effect*/
 body{
+  background-image: url("230193.jpg");
   font-family: "Poppins";
 }
+
+
 #home,
 #particles-js {
   position: relative;
