@@ -31,3 +31,54 @@
 span.answer{
   color: #ccc;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .toc-holder {
+    margin-bottom: 20px;
+  }  
+  #code, #console {
+    height:auto;
+  }
+  #code {
+    margin-bottom: 20px;
+  }
+  code {
+    margin-bottom: 20px;
+  }    
+}
+
+code {
+    border-radius: 5px;
+  width:750px;
+  margin: 0 auto;
+  padding-top:15px;
+  font-size:30px;
+  background: #383737;
+  height: 700px;
+  font-family: 'Monaco', 'Courier New';
+  text-align: left;
+  font-size:13px;
+  color: #fafafa;
+}
+
+#code {
+  border-radius: 5px;
+  width:750px;
+  padding-top:40px;
+  font-size:30px;
+  background: #383737;
+  height: 600px;
+  font-family: 'Monaco', 'Courier New';
+  text-align: left;
+  font-size:13px;
+  color: #fafafa;
+  padding-left: 20px;
+}
+a:hover {
+  color: #ff1493;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Orbitron', sans-serif;
+}
