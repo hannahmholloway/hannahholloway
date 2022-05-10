@@ -99,16 +99,43 @@
 
 
             <form class="contactForm" action="https://forms.un-static.com/forms/71b3f2d9590109aa472ca3196f908f054137ab91" method="post">
-                <input placeholder="Name" type="text" name="Name" id="fullName" required>
-                <input placeholder="Email" type="text" name="Email" id="email" required>
-                <textarea required name="message" placeholder="Enter your message..."></textarea>
-                <input type="submit" value="Send">
-            </form>
-            <ul>
-                <li><a href="https://github.com/hannahmholloway"><i class="fab fa-github-square"></i></a></li>
-            
-                <li><a href="https://www.linkedin.com/in/hannah-holloway-36215a14b/"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
+  <div class="form-group row">
+    <label for="name" class="col-4 col-form-label">Name</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-user"></i>
+        </div>
+        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-4 col-form-label">E-mail address</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="message" class="col-4 col-form-label">Message</label>
+    <div class="col-8">
+      <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</form>
+<div align="center">
+  <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
+</div>
         </section>
     </main>
 
