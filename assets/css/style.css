@@ -390,7 +390,8 @@ canvas {
     max-width: 730px; }
 
 .portfolio {
-  padding-top: 125px; }
+  padding-top: 125px;
+border-top: solid 1px #00f428;}
 
 .portfolioPieces {
   width: 100%;
