@@ -609,8 +609,7 @@ border-top: solid 1px #FF1696;}
     width: 100%; }
     .mainNav ul li {
       margin-right: 20px; }
-      .mainNav ul li:nth-child(4) {
-        display: none; }
+      .mainNav ul li:nth-child(4) {}
   .skills ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 0px;
