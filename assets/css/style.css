@@ -384,7 +384,8 @@ canvas {
   width: 100%;
   padding-top: 125px;
   padding-bottom: 125px;
-  background: #000; }
+  background: #000; 
+border-top: solid 1px #00f428;}
   .about p {
     margin: 0 auto 15px auto;
     max-width: 730px; }
