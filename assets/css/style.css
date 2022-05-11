@@ -384,15 +384,14 @@ canvas {
   width: 100%;
   padding-top: 125px;
   padding-bottom: 125px;
-  background: #000;
-  border-top: solid 1px #FF1696; }
+  background: #000; }
   .about p {
     margin: 0 auto 15px auto;
     max-width: 730px; }
 
 .portfolio {
   padding-top: 125px;
-  border-top: solid 1px #FF1696; }
+border-top: solid 1px #FF1696;}
 
 .portfolioPieces {
   width: 100%;
@@ -610,7 +609,7 @@ canvas {
     width: 100%; }
     .mainNav ul li {
       margin-right: 20px; }
-      .mainNav ul li:nth-child(3) {
+      .mainNav ul li:nth-child(4) {
         display: none; }
   .skills ul {
     grid-template-columns: 1fr 1fr 1fr;
