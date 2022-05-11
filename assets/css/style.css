@@ -610,7 +610,7 @@ canvas {
     width: 100%; }
     .mainNav ul li {
       margin-right: 20px; }
-      .mainNav ul li:nth-child(3) {
+      .mainNav ul li:nth-child(4) {
         display: none; }
   .skills ul {
     grid-template-columns: 1fr 1fr 1fr;
