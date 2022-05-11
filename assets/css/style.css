@@ -296,11 +296,9 @@ section {
       line-height: 60px;
       margin-right: 30px;
       height: 60px; }
-      .mainNav ul li:last-of-type {
-        margin-right: 0px; }
       .mainNav ul li a {
         color: #FF1696;
-        display: block; }
+        display: block; d}
         .mainNav ul li a:hover {
           -webkit-box-shadow: inset 0px -1px 0px 0px #FF1696;
                   box-shadow: inset 0px -1px 0px 0px #FF1696;
@@ -609,7 +607,6 @@ border-top: solid 1px #FF1696;}
     width: 100%; }
     .mainNav ul li {
       margin-right: 20px; }
-      .mainNav ul li:nth-child(4) {}
   .skills ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 0px;
